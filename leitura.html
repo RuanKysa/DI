@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="shortcut icon" href="assets/imagens/favicon-16x16.png" type="image/x-icon">
+
+    <title>livros</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Biblioteca Virtual</h1>
+            <div class="pesquisa-filtro">
+                <input type="text" id="pesquisar" placeholder="Pesquisar...">
+                <button id="btn-pesquisar">Pesquisar</button>
+                <select id="filtro">
+                    <option value="todos">Todos</option>
+                    <option value="ficcao">Ficção</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="romance">Romance</option>
+                </select>
+            </div>          
+        </div>
+        <nav class="zoom-controls">
+            <ul>
+                <li><button onclick="Mais()">Aumentar Zoom</button></li>
+                <li> <button onclick="Menos()" type="button">Diminuir Zoom</button></li>
+                <select id="filtro">
+                    <option value="todos">Tema Claro</option>
+                    <option value="ficcao">Tema Escuto</option>
+                    <option value="Comédia">Tema monocromático</option>
+                    <option value="romance">Tema dicromático</option>
+                    <option value="romance">Tema tri-cromático</option>
+
+                </select>
+            </ul>
+    </header>
+    <aside>
+        
+    </aside>
+
+    <main>
+        <div class="container-leitura">
+            <div id="pagina1" class="pagina-leitura">
+                <!-- Conteúdo da página -->
+                <img src="assets/imagens/Banana 1/VOL-1-Diario-de-um-Banana-pdf-7-2048.webp" alt="">
+            </div>
+            <div id="pagina2" class="pagina-leitura">
+                <!-- Conteúdo da página -->
+                <img src="assets/imagens/Banana 1/VOL-1-Diario-de-um-Banana-pdf-8-2048.webp" alt="">
+            </div>
+            <div id="pagina3" class="pagina-leitura">
+                <!-- Conteúdo da página -->
+                <img src="assets/imagens/Banana 1/VOL-1-Diario-de-um-Banana-pdf-9-2048.webp" alt="">
+            </div>
+            <div class="controles-leitura">
+                <button id="pagina-anterior">Página Anterior</button>
+                <button id="pagina-seguinte">Página Seguinte</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Biblioteca Virtual. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/JavaScript/script.js"></script>
+
+</body>
+
+</html>

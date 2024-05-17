@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="shortcut icon" href="assets/imagens/favicon-16x16.png" type="image/x-icon">
+    <title>Leitura do Livro</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Biblioteca Virtual</h1>
+            <div class="pesquisa-filtro">
+                <a href="Login.html" class="btn-login">Login</a>
+                <a href="Cadastro.html" class="btn-cadastro">Cadastro</a>
+            </div>
+        </div>
+        <nav class="zoom-controls">
+            <ul>
+                <li><button onclick="Mais()">Aumentar Zoom</button></li>
+                <li> <button onclick="Menos()" type="button">Diminuir Zoom</button></li>
+                <select id="filtro">
+                    <option value="todos">Tema Claro</option>
+                    <option value="ficcao">Tema Escuto</option>
+                    <option value="Comédia">Tema monocromático</option>
+                    <option value="romance">Tema dicromático</option>
+                    <option value="romance">Tema tri-cromático</option>
+
+                </select>
+            </ul>
+
+
+        </nav>
+    </header>
+
+
+    <section class="welcome-section">
+        <div class="container">
+            <h2>Bem-vindo à Biblioteca Virtual</h2>
+            <p>Descubra uma vasta coleção de livros para explorar e desfrutar.</p>
+            <a href="index.html">Comece agora!</a>
+        </div>
+    </section>
+    <section class="accessibilities">
+        <section class="book-listing">
+            <div class="container">
+                <h2>Listagem de Livros:</h2>
+                <p><strong>Veja abaixo alguns dos nossos livros em destaque:</strong></p>
+                <div class="books-grid">
+                    <div class="book">
+                        <img src="assets/imagens/2.jpg" alt="Diário de um Banana 1">
+                        <p>Diário de um Banana 2: Rodrick é o cara</p>
+                        <button class="ler-livro"
+                            onclick="openModal('Diário de um Banana 2: Rodrick é o cara', 'assets/imagens/2.jpg', 'Faça o que quiser, só não pergunte a Greg Heffley como foram suas férias de verão, porque ele realmente não quer falar sobre isso. De volta às aulas, Greg está ansioso para enterrar de vez os últimos três meses... e um acontecimento em particular. Mas seu irmão mais velho, Rodrick, não vai deixar que as coisas caiam no esquecimento assim tão fácil. Ele é testemunha de um pequeno incidente que Greg quer manter em sigilo. Mas sabe como são os segredos, não é? Logo, logo estão na boca do povo, especialmente quando há um diário envolvido na confusão')">Ler
+                            Livro</button>
+                    </div>
+                    <div class="book">
+                        <img src="assets/imagens/3_.jpg" alt="Diário de um Banana 1">
+                        <p>Diário de um Banana 3: A gota d’água</p>
+                        <button class="ler-livro"
+                            onclick="openModal('Diário de um Banana 3: A gota d’água', 'assets/imagens/3_.jpg', 'Greg não toma jeito mesmo. E a cada dia se envolve em mais confusão. O difícil é fazer seu pai engolir esse talento de Greg para se meter em situações embaraçosas. Ele já está por aqui com o garoto. E para botar algum juízo na cabeça dele, Frank Heffley tenta de tudo um pouco. É claro que Greg sempre encontra uma maneira de estragar tudo. Até que seu pai faz uma grande ameaça e as coisas mudam de figura. Qual será a gota d’água que vai fazer a paciência de Frank transbordar de vez?')">Ler
+                            Livro</button>
+                    </div>
+                    <div class="book">
+                        <img src="assets/imagens/4.jpg" alt="Diário de um Banana 4: Dias de Cão">
+                        <p>Diário de um Banana 4: Dias de Cão</p>
+                        <button class="ler-livro"
+                            onclick="openModal('Diário de um Banana 4: Dias de Cão', 'assets/imagens/4.jpg', 'Férias de verão: o tempo está lindo, e toda garotada está se divertindo ao ar livre. Onde está Greg Heffley? Dentro da sua casa, jogando videogame com as cortinas fechadas. Greg, um caseiro assumido, está vivendo sua última fantasia de verão: nada de responsabilidades e regras. Mas a mãe do Greg tem uma visão diferente para um verão ideal, muitas atividades fora de casa e união da família. Qual ponto de vista vai ganhar? Ou será que uma nova aquisição para a família Heffley pode mudar tudo?')">Ler
+                            Livro</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="accessibilities">
+        <div class="container">
+            <h2>Acessibilidade em nossa biblioteca</h2>
+
+            <p>Este portal busca seguir os melhores princípios e regras de acessibilidade conforme o padrão apontado
+                pelo WCAG (World Content Accessibility Guide) do W3C. O site foi desenvolvido de forma a atender
+                diferentes tipos de deficiências como baixa visão, daltonismo e mobilidade reduzida, a partir de
+                ferramentas que permitem:</p>
+
+            <ul>
+                <li>Aumentar e diminuir o tamanho das fontes;</li>
+                <li>Alterar o contraste de cores das páginas;</li>
+                <li>Acessar links de atalho ao conteúdo principal; e</li>
+                <li>Navegar via teclado.</li>
+            </ul>
+
+            <p>Na parte superior do site existe uma barra de acessibilidade onde se encontra atalhos de navegação
+                padronizados e a opção para alterar o contraste. Em qualquer página é possível acessar os conteúdos
+                pelas teclas de atalho citadas abaixo:</p>
+
+            <ul>
+                <li>Teclando-se ALT + 1, chega-se diretamente ao começo do conteúdo principal da página;</li>
+                <li>Teclando-se ALT + 2, chega-se ao início do menu principal do site, que leva a todas as páginas
+                    internas;</li>
+                <li>Teclando-se ALT + 3, chega-se diretamente ao rodapé do site;</li>
+                <li>Teclando-se ALT + 4, chega-se a esta página (Acessibilidade deste site), que possui a explicação
+                    destas funções.</li>
+            </ul>
+
+            <p>Em nossa plataforma, na área do leitor do livro, temos alguns atalhos de navegação para o text to speech,
+                e é possível acessar os atalhos através das teclas citadas abaixo:</p>
+
+            <ul>
+                <li>Teclando-se ALT + 6, é possível dar o play e pause no text to speech;</li>
+                <li>Teclando-se ALT + 7, volta uma página;</li>
+                <li>Teclando-se ALT + 8, avança uma página;</li>
+                <li>Teclando-se ALT + 9, acelera a voz do áudio que está sendo executado;</li>
+                <li>Teclando-se ALT + 0, desacelera a voz do áudio que está sendo executado.</li>
+            </ul>
+
+            <p>Estes atalhos podem ser utilizados nos navegadores Internet Explorer e Chrome. No Firefox, no lugar de
+                Alt + número, deve-se teclar simultaneamente Alt + Shift + número. No Opera, deve-se teclar Shift +
+                Escape + número.</p>
+        </div>
+        <div class="container">
+            <h2>Escolha de Temas</h2>
+            <p>Escolha o tema que melhor se adapta às suas necessidades:</p>
+            <p>Você pode ajustar o tema do site para uma experiência de leitura mais confortável.</p>
+            <ul>
+                <li>Tema Claro;</li>
+                <li>Tema Escuro;</li>
+                <li>Tema Leitura;</li>
+            </ul>
+            <p> <strong> Temas Daltonico </strong> </p>
+            <ul>
+                <li>Tema Monocromático;</li>
+                <li>Tema Dicromático;</li>
+                <li>Tema Tri-cromático;</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h2>Páginas transcritas em audio</h2>
+        </div>
+    </section>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-image">
+            <h2 id="modal-title"></h2>
+            <p id="modal-summary"></p>
+            <button id="ler-livro-modal" class="ler-livro">Ler Livro</button>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Biblioteca Virtual. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+<script src="assets/JavaScript/script.js"></script>
+
+</html>

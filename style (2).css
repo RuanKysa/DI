@@ -1,0 +1,70 @@
+#acess{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+  background: linear-gradient(135deg, #e0ffff 0%, #fafad2 25%, #f0e68c 50%, #ffdead 100%);
+  padding: 0;
+  height: 100vh;
+
+}
+
+.content {
+  width: 30em;
+  display: flex;
+  flex-direction: column;
+  border: 0.1em solid rgb(3, 3, 3);
+  height: 30em;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  margin-bottom: 12.9em;
+  gap: 1em;
+  border-radius: 0.7em;
+}
+
+.content input {
+  padding: 0.7em;
+  border: none;
+  border-radius: 0.4em;
+  background-color: #ccc;
+}
+
+.content textarea:focus,
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+.content .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  width: 6em;
+  height: 2.5em;
+  background-color: #0008f7;
+  transition: background-color 0.3s;
+  border-radius: 0.4em;
+}
+
+.content .btn:hover {
+  background-color: #060bb4;
+}
+
+.content a{
+    text-decoration: none;
+}
+
+.btn{
+    width: 6em;
+    height: 2.5em;
+    border: none;
+    border-radius: 0.4em;
+    color: white;
+    background-color: #0008f7;
+}
