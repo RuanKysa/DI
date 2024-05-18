@@ -3,9 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #f3f3f3 );
-
-    
-
 }
 
 header {
@@ -13,38 +10,42 @@ header {
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutLdg1QFCCHUciQbFUvvP9-cEyPd6JCZJ4A&s');
     color: #fff;
     padding: 1.25em 0;
-}
+  }
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-}
+  }
 
-header h1 {
+  header h1 {
     margin: 0;
     font-size: 1.5em;
-}
+  }
+
+  ul {
+    list-style: none;
+  }
 
 
-.pesquisa-filtro {
+  .pesquisa-filtro {
     display: flex;
     align-items: center;
-}
+  }
 
 .pesquisa-filtro input[type="text"] {
     padding: 0.625em;
     margin-right: 0.625em;
     border: none;
     border-radius: 0.3125em;
-}
+  }
 
 .pesquisa-filtro select {
     padding: 0.625em;
     border: none;
     border-radius: 0.3125em;
     background-color: #fff;
-}
+  }
 
 #btn-pesquisar {
     margin-right: 0.3125em;
@@ -61,7 +62,7 @@ header h1 {
 #btn-pesquisar:hover {
     background-color: #218838;
 }
- 
+
 .btn-login {
     padding: 0.625em 1.25em;
     background-color: #dc3545;
@@ -105,7 +106,7 @@ header h1 {
 }
 
 .zoom-controls li {
-    margin: 0 5px; /* Ajuste o espaçamento entre os botões conforme necessário */
+    margin: 0 5px; 
 }
 
 .zoom-controls button,
@@ -201,7 +202,6 @@ header h1 {
     border: 0.0625em solid #888;
     width: 80%;
     max-width: 37.5em;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -214,6 +214,7 @@ header h1 {
     float: right;
     font-size: 1.75em;
     font-weight: bold;
+    align-items: end;
 
 }
 
@@ -226,7 +227,7 @@ header h1 {
 }
 
 footer {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutLdg1QFCCHUciQbFUvvP9-cEyPd6JCZJ4A&s');
+    background-color: #333;
     color: #fff;
     padding: 1.25em 0;
     text-align: center;
@@ -433,4 +434,37 @@ section a:hover {
     width: 40em;
     height: 50em;
     text-align: justify; 
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 10px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination a.prev,
+.pagination a.next {
+    font-weight: bold;
 }

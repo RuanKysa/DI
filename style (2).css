@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   gap: 5em;
-  background: linear-gradient(135deg, #e0ffff 0%, #fafad2 25%, #f0e68c 50%, #ffdead 100%);
+  background: #e0ffff;
   padding: 0;
   height: 100vh;
 
@@ -14,7 +14,7 @@
   width: 30em;
   display: flex;
   flex-direction: column;
-  border: 0.1em solid rgb(3, 3, 3);
+  border: 0.1em solid rgb(0, 58, 250);
   height: 30em;
   justify-content: center;
   align-items: center;
