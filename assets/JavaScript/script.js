@@ -12,10 +12,8 @@ function openModal(title, imageSrc, summary) {
 
     modal.style.display = "block"; 
 
-    lerLivroButton.onclick = function() {
-        alert("Lendo o livro: " + title);
     };
-}
+
 
 function closeModal() {
     var modal = document.getElementById("modal");

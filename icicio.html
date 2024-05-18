@@ -14,9 +14,15 @@
         <div class="container">
             <h1>Biblioteca Virtual</h1>
             <div class="pesquisa-filtro">
-                <a href="Login.html" class="btn-login">Login</a>
-                <a href="Cadastro.html" class="btn-cadastro">Cadastro</a>
-            </div>
+                <input type="text" id="pesquisar" placeholder="Pesquisar...">
+                <button id="btn-pesquisar">Pesquisar</button>
+                <select id="filtro">
+                    <option value="todos">Todos</option>
+                    <option value="ficcao">Ficção</option>
+                    <option value="Comédia">Comédia</option>
+                    <option value="romance">Romance</option>
+                </select>
+            </div>          
         </div>
         <nav class="zoom-controls">
             <ul>
@@ -31,9 +37,6 @@
 
                 </select>
             </ul>
-
-
-        </nav>
     </header>
 
 
@@ -51,24 +54,24 @@
                 <p><strong>Veja abaixo alguns dos nossos livros em destaque:</strong></p>
                 <div class="books-grid">
                     <div class="book">
-                        <img src="assets/imagens/2.jpg" alt="Diário de um Banana 1">
+                        <img src="assets/imagens/Banana 2/2.jpg" alt="Diário de um Banana 1">
                         <p>Diário de um Banana 2: Rodrick é o cara</p>
                         <button class="ler-livro"
-                            onclick="openModal('Diário de um Banana 2: Rodrick é o cara', 'assets/imagens/2.jpg', 'Faça o que quiser, só não pergunte a Greg Heffley como foram suas férias de verão, porque ele realmente não quer falar sobre isso. De volta às aulas, Greg está ansioso para enterrar de vez os últimos três meses... e um acontecimento em particular. Mas seu irmão mais velho, Rodrick, não vai deixar que as coisas caiam no esquecimento assim tão fácil. Ele é testemunha de um pequeno incidente que Greg quer manter em sigilo. Mas sabe como são os segredos, não é? Logo, logo estão na boca do povo, especialmente quando há um diário envolvido na confusão')">Ler
+                            onclick="openModal('Diário de um Banana 2: Rodrick é o cara', 'assets/imagens/Banana 2/2.jpg', 'Faça o que quiser, só não pergunte a Greg Heffley como foram suas férias de verão, porque ele realmente não quer falar sobre isso. De volta às aulas, Greg está ansioso para enterrar de vez os últimos três meses... e um acontecimento em particular. Mas seu irmão mais velho, Rodrick, não vai deixar que as coisas caiam no esquecimento assim tão fácil. Ele é testemunha de um pequeno incidente que Greg quer manter em sigilo. Mas sabe como são os segredos, não é? Logo, logo estão na boca do povo, especialmente quando há um diário envolvido na confusão')">Ler
                             Livro</button>
                     </div>
                     <div class="book">
-                        <img src="assets/imagens/3_.jpg" alt="Diário de um Banana 1">
+                        <img src="assets/imagens/Banana 3/3_.jpg" alt="Diário de um Banana 1">
                         <p>Diário de um Banana 3: A gota d’água</p>
                         <button class="ler-livro"
-                            onclick="openModal('Diário de um Banana 3: A gota d’água', 'assets/imagens/3_.jpg', 'Greg não toma jeito mesmo. E a cada dia se envolve em mais confusão. O difícil é fazer seu pai engolir esse talento de Greg para se meter em situações embaraçosas. Ele já está por aqui com o garoto. E para botar algum juízo na cabeça dele, Frank Heffley tenta de tudo um pouco. É claro que Greg sempre encontra uma maneira de estragar tudo. Até que seu pai faz uma grande ameaça e as coisas mudam de figura. Qual será a gota d’água que vai fazer a paciência de Frank transbordar de vez?')">Ler
+                            onclick="openModal('Diário de um Banana 3: A gota d’água', 'assets/imagens/Banana 3/3_.jpg', 'Greg não toma jeito mesmo. E a cada dia se envolve em mais confusão. O difícil é fazer seu pai engolir esse talento de Greg para se meter em situações embaraçosas. Ele já está por aqui com o garoto. E para botar algum juízo na cabeça dele, Frank Heffley tenta de tudo um pouco. É claro que Greg sempre encontra uma maneira de estragar tudo. Até que seu pai faz uma grande ameaça e as coisas mudam de figura. Qual será a gota d’água que vai fazer a paciência de Frank transbordar de vez?')">Ler
                             Livro</button>
                     </div>
                     <div class="book">
-                        <img src="assets/imagens/4.jpg" alt="Diário de um Banana 4: Dias de Cão">
+                        <img src="assets/imagens/Banana 4/4.jpg" alt="Diário de um Banana 4: Dias de Cão">
                         <p>Diário de um Banana 4: Dias de Cão</p>
                         <button class="ler-livro"
-                            onclick="openModal('Diário de um Banana 4: Dias de Cão', 'assets/imagens/4.jpg', 'Férias de verão: o tempo está lindo, e toda garotada está se divertindo ao ar livre. Onde está Greg Heffley? Dentro da sua casa, jogando videogame com as cortinas fechadas. Greg, um caseiro assumido, está vivendo sua última fantasia de verão: nada de responsabilidades e regras. Mas a mãe do Greg tem uma visão diferente para um verão ideal, muitas atividades fora de casa e união da família. Qual ponto de vista vai ganhar? Ou será que uma nova aquisição para a família Heffley pode mudar tudo?')">Ler
+                            onclick="openModal('Diário de um Banana 4: Dias de Cão', 'assets/imagens/Banana 4/4.jpg', 'Férias de verão: o tempo está lindo, e toda garotada está se divertindo ao ar livre. Onde está Greg Heffley? Dentro da sua casa, jogando videogame com as cortinas fechadas. Greg, um caseiro assumido, está vivendo sua última fantasia de verão: nada de responsabilidades e regras. Mas a mãe do Greg tem uma visão diferente para um verão ideal, muitas atividades fora de casa e união da família. Qual ponto de vista vai ganhar? Ou será que uma nova aquisição para a família Heffley pode mudar tudo?')">Ler
                             Livro</button>
                     </div>
                 </div>
