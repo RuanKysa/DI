@@ -15,20 +15,24 @@
             <h1>Biblioteca Virtual</h1>
             <div class="pesquisa-filtro">
                 <ul>
-                  <li>
-                    <input type="text" id="pesquisar" placeholder="Pesquisar...">
-                  </li>
-                  <li id="resultado"></li>
+                    <li>
+                        <input type="text" id="pesquisar" placeholder="Pesquisar..." onkeyup="mostrarResultados()">
+                        
+                    </li>
+                    <li id="resultado"></li>
+                    <div id="suggestions" class="suggestions">
+                        <ul id="modal-resultados"></ul>
+                    </div>
                 </ul>
-                
                 <button id="btn-pesquisar" onclick="Filtra()">Pesquisar</button>
                 <select id="filtro">
-                  <option value="todos">Todos</option>
-                  <option value="ficcao">Ficção</option>
-                  <option value="Comédia">Comédia</option>
-                  <option value="romance">Romance</option>
+                    <option value="todos">Todos</option>
+                    <option value="ficcao">Ficção</option>
+                    <option value="comedia">Comédia</option>
+                    <option value="romance">Romance</option>
                 </select>
-              </div>      
+            </div>
+            
         </div>
         <nav class="zoom-controls">
             <ul>
@@ -44,7 +48,6 @@
                 </select>
             </ul>
     </header>
-
 
     <section class="welcome-section">
         <div class="container">
@@ -158,10 +161,6 @@
             <button id="ler-livro-modal" class="ler-livro">Ler Livro</button>
         </div>
     </div>
-
-
-
-
     <footer>
         <div class="container">
             <p>&copy; 2024 Biblioteca Virtual. Todos os direitos reservados.</p>

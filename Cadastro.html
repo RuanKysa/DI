@@ -13,16 +13,25 @@
   <header>
     <div class="container">
         <h1>Biblioteca Virtual</h1>
-        <div class="zoom-controls">
-            <button onclick="Mais()">Aumentar Zoom</button>
-            <button onclick="Menos()">Diminuir Zoom</button>
-        </div>
+        <nav class="zoom-controls">
+          <ul>
+              <li><button onclick="Mais()">Aumentar Zoom</button></li>
+              <li> <button onclick="Menos()" type="button">Diminuir Zoom</button></li>
+              <select id="filtro">
+                  <option value="todos">Tema Claro</option>
+                  <option value="ficcao">Tema Escuto</option>
+                  <option value="Comédia">Tema monocromático</option>
+                  <option value="romance">Tema dicromático</option>
+                  <option value="romance">Tema tri-cromático</option>
+    
+              </select>
+          </ul>
+      </nav>
         <div class="pesquisa-filtro">
             <a href="Login.html" class="btn-login">Login</a>
             <a href="Cadastro.html" class="btn-cadastro">Cadastro</a>
         </div>
-        <button class="btn" onclick="Mais()">+</button>
-        <button class="btn" onclick="Menos()">-</button>
+        
     </div>
 </header>
 

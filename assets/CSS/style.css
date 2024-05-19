@@ -7,45 +7,49 @@ body {
 
 header {
     position: relative;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutLdg1QFCCHUciQbFUvvP9-cEyPd6JCZJ4A&s');
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRutLdg1QFCCHUciQbFUvvP9-cEyPd6JCZJ4A&s'); */
+    background-color: #010825;
     color: #fff;
     padding: 1.25em 0;
-  }
+}
 
 header .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+    max-width: 130em;
 
-  header h1 {
+}
+
+header h1 {
     margin: 0;
-    font-size: 1.5em;
-  }
+    font-size: 2.5em;
+}
 
-  ul {
+ul {
     list-style: none;
-  }
+}
 
-
-  .pesquisa-filtro {
+.pesquisa-filtro {
     display: flex;
     align-items: center;
-  }
+    position: relative;
+}
 
 .pesquisa-filtro input[type="text"] {
     padding: 0.625em;
     margin-right: 0.625em;
     border: none;
     border-radius: 0.3125em;
-  }
+    width: 24em;
+}
 
 .pesquisa-filtro select {
-    padding: 0.625em;
+    padding: 0.725em;
     border: none;
     border-radius: 0.3125em;
     background-color: #fff;
-  }
+}
 
 #btn-pesquisar {
     margin-right: 0.3125em;
@@ -63,6 +67,43 @@ header .container {
     background-color: #218838;
 }
 
+.suggestions {
+    display: none;
+    position: absolute;
+    top: calc(100%); /* Ajusta a distância abaixo da barra de pesquisa */
+    left: 0;
+    width: calc(70%); /* Ajusta a largura da caixa de sugestões */
+    max-height: 200px; /* Define a altura máxima para a caixa de sugestões */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
+    background-color: #007bff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    
+}
+
+.suggestions ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.suggestions li {
+    padding: 0.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.suggestions li img {
+    width: 30px; /* Ajusta o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-right: 10px; /* Adiciona um espaço entre a imagem e o texto da sugestão */
+}
+
+.suggestions li:hover {
+    background-color: #0056b3;
+}
 .btn-login {
     padding: 0.625em 1.25em;
     background-color: #dc3545;
@@ -140,6 +181,7 @@ header .container {
     padding: 0 1.25em;
     
 }
+
 
 .books-grid {
     display: grid;
@@ -239,7 +281,7 @@ footer p {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     header {
         padding: 1em 0;
     }
@@ -265,7 +307,7 @@ footer p {
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 825px) and (max-width: 1024px) {
     header .container {
         flex-direction: row;
         justify-content: space-between;
@@ -347,12 +389,14 @@ section a:hover {
 }
 
 .welcome-section {
-    background-image: url('https://media.istockphoto.com/id/1276988327/pt/foto/3d-render-abstract-colorfully-background-illustration.jpg?s=612x612&w=0&k=20&c=UbK01GrKmIhQ08ijLeaVfndtwe18qmaR5h64Tf3Q7ts=');
+    background-image: url('https://img.freepik.com/fotos-premium/mundo-de-fantasia-dentro-do-livro-conceito-de-educacao-imaginacao-e-criatividade-da-leitura-de-livros_999147-7679.jpg');
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 100px 0;
+    height: 10em;
+    width: 100%;
 }
 
 .welcome-section .container {

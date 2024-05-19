@@ -20,8 +20,12 @@
                 <ul>
                     <li>
                         <input type="text" id="pesquisar" placeholder="Pesquisar..." onkeyup="mostrarResultados()">
+                        
                     </li>
                     <li id="resultado"></li>
+                    <div id="suggestions" class="suggestions">
+                        <ul id="modal-resultados"></ul>
+                    </div>
                 </ul>
                 <button id="btn-pesquisar" onclick="Filtra()">Pesquisar</button>
                 <select id="filtro">
@@ -31,6 +35,7 @@
                     <option value="romance">Romance</option>
                 </select>
             </div>
+            
         </div>
         <nav class="zoom-controls">
             <ul>
