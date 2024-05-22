@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/temaDicromatico.css">
+    <link rel="stylesheet" href="assets/CSS/temaEscuro.css">
+    <link rel="stylesheet" href="assets/CSS/temaMonocromatico.css">
     <link rel="shortcut icon" href="assets/imagens/favicon-16x16.png" type="image/x-icon">
     <title>Bem-Vindo</title>
 </head>
@@ -38,15 +41,26 @@
             <ul>
                 <li><button onclick="Mais()">Aumentar Zoom</button></li>
                 <li> <button onclick="Menos()" type="button">Diminuir Zoom</button></li>
-                <select id="filtro">
-                    <option value="todos">Tema Claro</option>
-                    <option value="ficcao">Tema Escuto</option>
-                    <option value="Comédia">Tema monocromático</option>
-                    <option value="romance">Tema dicromático</option>
-                    <option value="romance">Tema tri-cromático</option>
-
-                </select>
+                <select id="filtro" onchange="trocarTema(this.value)">
+                    <option value="">Tema Claro</option>
+                    <option value="escuro">Tema Escuto</option>
+                    <option value="monocromatico">Tema monocromático</option>
+                    <option value="dicromatico">Tema dicromático</option>
+                    <option value="tricromatico">Tema tri-cromático</option>
+                </select> 
+                <!-- <li> <a href="/Login.html" class="btn-acessar">Login</a></li>
+                <li> <a href="/Cadastro.html" class="btn-acessar">Cadastro</a></li>
+                <li> <a href="/AdicionarLivro.html" class="btn-acessar">Adicionar Livros</a></li> -->
+                            
             </ul>
+        </nav>
+        <nav class="zoom-controls">
+            <ul>
+                <li> <a href="/Login.html" class="btn-acessar">Login</a></li>
+                <li> <a href="/Cadastro.html" class="btn-acessar">Cadastro</a></li>
+                <li> <a href="/AdicionarLivro.html" class="btn-acessar">Adicionar Livros</a></li>            
+            </ul>
+        </nav>
     </header>
 
     <section class="welcome-section">

@@ -1,0 +1,32 @@
+.monocromatico header button,
+.monocromatico header select {
+  background-color: #fff;
+  color: #000;
+}
+
+.monocromatico header button:hover,
+.monocromatico header select:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.monocromatico header #btn-pesquisar {
+  background-color: #fff;
+  color: #000;
+}
+
+.monocromatico main button,
+.monocromatico main h2:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #000;
+  color: #fff;
+}
+
+.monocromatico main button:hover,
+.monocromatico main h2:hover:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #000;
+  color: #fff;
+}
+
+.monocromatico .welcome-section a {
+  background-color: #000;
+}

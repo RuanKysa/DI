@@ -70,11 +70,10 @@ ul {
 .suggestions {
     display: none;
     position: absolute;
-    top: calc(100%); /* Ajusta a distância abaixo da barra de pesquisa */
-    left: 0;
-    width: calc(70%); /* Ajusta a largura da caixa de sugestões */
-    max-height: 200px; /* Define a altura máxima para a caixa de sugestões */
-    overflow-y: auto; /* Adiciona uma barra de rolagem vertical se necessário */
+    top: calc(100%); 
+    width: calc(70%); 
+    max-height: 200px;
+    overflow-y: auto; 
     background-color: #007bff;
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -96,15 +95,15 @@ ul {
 }
 
 .suggestions li img {
-    width: 30px; /* Ajusta o tamanho da imagem conforme necessário */
+    width: 30px; 
     height: auto;
-    margin-right: 10px; /* Adiciona um espaço entre a imagem e o texto da sugestão */
+    margin-right: 10px; 
 }
 
 .suggestions li:hover {
     background-color: #0056b3;
 }
-.btn-login {
+.btn-acessar {
     padding: 0.625em 1.25em;
     background-color: #dc3545;
     color: #fff;
@@ -117,23 +116,11 @@ ul {
 
 }
 
-.btn-cadastro {
-    padding: 0.625em 1.25em;
-    background-color: #dc3545;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 0.3125em;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-.btn-login:hover,
-.btn-cadastro:hover {
+.btn-acessar:hover {
     background-color: #c82333;
     text-decoration: none;
 }
-
 .zoom-controls {
     display: flex;
     justify-content: center;

@@ -1,0 +1,32 @@
+.dicromatico button,
+.dicromatico select {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.dicromatico button:hover,
+.dicromatico select:hover {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.dicromatico #btn-pesquisar {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.dicromatico main button,
+.dicromatico main h2:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.dicromatico main button:hover,
+.dicromatico main h2:hover:not(:is(.mensagem-boas-vindas, #modal-title)) {
+  background-color: #777da7;
+  color: #fff;
+}
+
+.dicromatico .welcome-section a {
+  background-color: #777da7;
+}

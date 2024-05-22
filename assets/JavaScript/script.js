@@ -320,3 +320,12 @@ window.onclick = function(event) {
     suggestions.style.display = "none";
   }
 }
+
+// troca temas-----------------------------------------------------------------------------------------------------------------------
+function trocarTema(tema) {
+  document.body.className = '';
+
+  if (tema) {
+    document.body.classList.add(tema);
+  }
+}
